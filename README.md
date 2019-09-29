@@ -16,8 +16,7 @@
 ## Платформы и технологии
 
 IDE --- **Android Studio**
+
 Lang --- **Kotlin**
+
 TS --- **Android SDK**
-=======
-# StudentCalendarApp
->>>>>>> 6e46939025a9455dda2944158a626a8281478734
