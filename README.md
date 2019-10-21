@@ -20,3 +20,7 @@ IDE — **Android Studio**
 Lang — **Kotlin**
 
 TS — **Android SDK**
+
+## План обучения
+
+[План обучения](https://docs.google.com/document/d/1RlEsWnXS48hWfkUfa9ajgiNC7QS_WzNp2xVMXmx4o38/edit) для нас
