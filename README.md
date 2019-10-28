@@ -1,4 +1,4 @@
-﻿## STUDENT CALENDAR
+## STUDENT CALENDAR
 Приложение **Student Calendar** создано для организации своего учебного процесса. 
 Разрабатывается двумя студентами ПС-21 ПГТУ – Акимовой Татьяной и Булатниковым Сергеем.
 **Student Calendar** позволяет следить за расписанием занятий и создавать напоминания на выбранные даты, чтобы не забыть что-то важное.
@@ -24,3 +24,7 @@ TS — **Android SDK**
 ## План обучения
 
 [План обучения](https://docs.google.com/document/d/1RlEsWnXS48hWfkUfa9ajgiNC7QS_WzNp2xVMXmx4o38/edit) для нас
+
+## RoadMap
+
+[RoadMap](https://docs.google.com/spreadsheets/d/182AX7Wlx1TeweNgJkFRYdoQ1Xz0NT2gPf1C4Dfqu1ew/edit?usp=sharing)
