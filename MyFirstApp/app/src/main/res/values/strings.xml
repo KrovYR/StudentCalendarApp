@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="hello_world_text">0</string>
+    <string name="random_heading">Это случайное число между 0 и %1d</string>
+    <string name="random_number">R</string>
+    <string name="message_view">Message</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_calendar">Calendar</string>
+    <string name="button_count">Count</string>
+    <string name="button_toast">Toast</string>
+    <string name="button_random">Random</string>
+</resources>
