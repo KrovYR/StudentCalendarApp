@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StudentCalendar</string>
+    <string name="student_calendar">StudentCalendar</string>
+    <string name="button_today">Сегодня</string>
+    <string name="button_calendar">Календарь</string>
+    <string name="date">вторник, 12 ноября</string>
+    <string name="schedule_title">Расписание</string>
+    <string name="table_time">Время</string>
+    <string name="table_lesson">Дисциплина</string>
+    <string name="table_classroom">Ауд.</string>
+    <string name="button_add">Добавить</string>
+    <string name="reminder_title">Напоминания</string>
+    <string name="reminder_none">Нет напоминаний</string>
+    <string name="add_schedule">Добавить расписание</string>
+    <string name="add_reminder">Добавить напоминание</string>
+</resources>

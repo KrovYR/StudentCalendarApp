@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/toolbar"
+        android:elevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_toolbar"
+                app:layout_constraintRight_toLeftOf="@id/app_name"
+                />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:text="@string/student_calendar"
+                android:textColor="@color/text_light"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.581"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/year_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/year_number">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="12dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <!-- prev button -->
+            <ImageView
+                android:id="@+id/calendar_prev_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back" />
+
+            <!-- date title -->
+            <TextView
+                android:id="@+id/calendar_date_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/calendar_next_button"
+                android:layout_toRightOf="@+id/calendar_prev_button"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="Ноябрь"
+                android:textColor="#222222"
+                android:textSize="22sp" />
+
+            <!-- next button -->
+            <ImageView
+                android:id="@+id/calendar_next_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_forward" />
+        </RelativeLayout>
+
+        <!-- days header -->
+        <LinearLayout
+            android:id="@+id/calendar_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="ПН"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="ВТ"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="СР"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="ЧТ"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="ПТ"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="СБ"
+                android:textColor="#222222" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="ВС"
+                android:textColor="#222222" />
+        </LinearLayout>
+
+        <!-- days view -->
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="7" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.button.MaterialButton
+            android:onClick="openDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            android:letterSpacing="0"
+            android:text="@string/button_today"
+            app:icon="@drawable/ic_today"
+            app:iconSize="40dp"
+            app:backgroundTint="@color/buttonNavigation"
+            android:backgroundTintMode="add"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="18sp"
+            android:text="@string/button_calendar"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            android:letterSpacing="0"
+            android:paddingStart="10dp"
+            app:iconSize="40dp"
+            app:backgroundTint="@color/buttonNavigation"
+            app:backgroundTintMode="@color/buttonNavigation"
+            app:icon="@drawable/ic_calendar"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

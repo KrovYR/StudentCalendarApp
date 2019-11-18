@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="layoutBackground">#e0e0e0</color>
+    <color name="toolbar">#817474</color>
+    <color name="toolbarText">#e0e0e0</color>
+
+    <color name="text_light">#e0e0e0</color>
+    <color name="text_dark">#000000</color>
+    <color name="splitterHorizontal">#a3a3a3</color>
+    <color name="reminderText">#777777</color>
+
+    <color name="screenBackground">#e0e0e0</color>
+    <color name="colorHeader">#817474</color>
+    <color name="weekBlue">#4753a8</color>
+    <color name="weekRed">#a55555</color>
+    <color name="buttonNavigation">#272727</color>
+    <color name="buttonNavigationHover">#151515</color>
+    <color name="buttonText">#e0e0e0</color>
+</resources>
